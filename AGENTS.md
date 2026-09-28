@@ -1,6 +1,6 @@
 # Everything Claude Code (ECC) — Agent Instructions
 
-This is a **production-ready AI coding plugin** providing 68 specialized agents, 292 skills, 94 commands, and automated hook workflows for software development.
+This is a **production-ready AI coding plugin** providing 69 specialized agents, 292 skills, 94 commands, and automated hook workflows for software development.
 
 **Version:** 2.2.2
 
@@ -40,6 +40,7 @@ This is a **production-ready AI coding plugin** providing 68 specialized agents,
 | django-build-resolver | Django build, migration, and setup errors | Django startup, dependency, migration, collectstatic failures |
 | java-reviewer | Java and Spring Boot code review | Java/Spring Boot projects |
 | java-build-resolver | Java/Maven/Gradle build errors | Java build failures |
+| chief-of-staff-orchestrator | Delegation across specialist subagents | Multi-specialty requests, single point of contact |
 | loop-operator | Autonomous loop execution | Run loops safely, monitor stalls, intervene |
 | harness-optimizer | Harness config tuning | Reliability, cost, throughput |
 | rust-reviewer | Rust code review | Rust projects |
@@ -59,6 +60,7 @@ Use agents proactively without user prompt:
 - Security-sensitive code → **ecc:security-reviewer**
 - Brownfield project onboarding → **ecc:spec-miner**
 - Autonomous loops / loop monitoring → **ecc:loop-operator**
+- Request spanning several specialties → **ecc:chief-of-staff-orchestrator** (run as main-thread agent)
 - Harness config reliability and cost → **ecc:harness-optimizer**
 - RAG/retrieval pipeline changes → **ecc:rag-pipeline-reviewer**
 
@@ -153,7 +155,7 @@ Troubleshoot failures: check test isolation → verify mocks → fix implementat
 ## Project Structure
 
 ```
-agents/          — 68 specialized subagents
+agents/          — 69 specialized subagents
 skills/          — 292 workflow skills and domain knowledge
 commands/        — 94 slash commands
 hooks/           — Trigger-based automations

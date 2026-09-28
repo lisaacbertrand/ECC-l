@@ -1,6 +1,6 @@
 # Everything Claude Code (ECC) — Agent Talimatları
 
-Bu, yazılım geliştirme için 68 özel agent, 292 skill, 94 command ve otomatik hook iş akışları sağlayan **üretime hazır bir AI kodlama eklentisidir**.
+Bu, yazılım geliştirme için 69 özel agent, 292 skill, 94 command ve otomatik hook iş akışları sağlayan **üretime hazır bir AI kodlama eklentisidir**.
 
 **Sürüm:** 2.2.2
 
@@ -37,6 +37,7 @@ Bu, yazılım geliştirme için 68 özel agent, 292 skill, 94 command ve otomati
 | java-reviewer | Java ve Spring Boot kod incelemesi | Java/Spring Boot projeleri |
 | java-build-resolver | Java/Maven/Gradle build hataları | Java build başarısızlıkları |
 | chief-of-staff | İletişim önceliklendirme ve taslaklar | Çok kanallı email, Slack, LINE, Messenger |
+| chief-of-staff-orchestrator | Uzman subagent'lara görev dağıtımı | Birden fazla uzmanlık alanı içeren istekler |
 | loop-operator | Otonom döngü yürütme | Döngüleri güvenli çalıştırma, takılmaları izleme, müdahale |
 | harness-optimizer | Harness yapılandırma ayarlama | Güvenilirlik, maliyet, verimlilik |
 | rust-reviewer | Rust kod incelemesi | Rust projeleri |
@@ -141,7 +142,7 @@ Başarısızlık sorunlarını giderin: test izolasyonunu kontrol edin → mockl
 ## Proje Yapısı
 
 ```
-agents/          — 68 özel subagent
+agents/          — 69 özel subagent
 skills/          — 292 iş akışı skillleri ve alan bilgisi
 commands/        — 94 slash command
 hooks/           — Tetikleyici tabanlı otomasyonlar
