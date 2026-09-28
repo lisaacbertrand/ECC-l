@@ -1,0 +1,7 @@
+# Real financial data never goes into version control
+finances/inbox/*
+!finances/inbox/.gitkeep
+finances/archive/
+finances/snapshot.md
+finances/tax/
+life/investments.md
