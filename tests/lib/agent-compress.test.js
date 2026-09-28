@@ -369,12 +369,14 @@ function runTests() {
   else failed++;
 
   if (
-    test('catalog mode token estimate is under 6000 for real agents', () => {
+    test('catalog mode token estimate is under 7000 for real agents', () => {
       if (!fs.existsSync(realAgentsDir)) return;
       const result = buildAgentCatalog(realAgentsDir, { mode: 'catalog' });
       // Canary tracks catalog growth: raised 5000 -> 6000 for the 67-agent catalog
       // after adding spec-miner (#2253), agent-evaluator (#2220), vue-reviewer (#2241).
-      assert.ok(result.stats.compressedTokenEstimate < 6000, `Token estimate ${result.stats.compressedTokenEstimate} exceeds 6000`);
+      // Raised 6000 -> 7000 for the 78-agent catalog after adding the market-intelligence
+      // coordinator and its eight sector and topic desks.
+      assert.ok(result.stats.compressedTokenEstimate < 7000, `Token estimate ${result.stats.compressedTokenEstimate} exceeds 7000`);
     })
   )
     passed++;
