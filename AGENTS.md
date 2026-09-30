@@ -1,6 +1,6 @@
 # Everything Claude Code (ECC) — Agent Instructions
 
-This is a **production-ready AI coding plugin** providing 69 specialized agents, 292 skills, 94 commands, and automated hook workflows for software development.
+This is a **production-ready AI coding plugin** providing 78 specialized agents, 292 skills, 94 commands, and automated hook workflows for software development.
 
 **Version:** 2.2.2
 
@@ -41,6 +41,15 @@ This is a **production-ready AI coding plugin** providing 69 specialized agents,
 | java-reviewer | Java and Spring Boot code review | Java/Spring Boot projects |
 | java-build-resolver | Java/Maven/Gradle build errors | Java build failures |
 | chief-of-staff-orchestrator | Delegation across specialist subagents | Multi-specialty requests, single point of contact |
+| market-intelligence-agent | Morning brief coordinator: politics, Canadian tax, markets, deals, earnings, ranked sector headlines | Daily market brief (run as main-thread agent) |
+| banking-ma-analyst | Banking sector M&A, distress, and earnings | Banking desk of the morning brief |
+| insurance-ma-analyst | Insurance sector M&A, distress, and earnings | Insurance desk of the morning brief |
+| defense-ma-analyst | Defense sector M&A, budgets, and earnings | Defense desk of the morning brief |
+| consumer-discretionary-ma-analyst | Consumer discretionary M&A, retail distress, and earnings | Consumer desk of the morning brief |
+| energy-ma-analyst | Energy sector M&A, distress, and earnings | Energy desk of the morning brief |
+| technology-sector-analyst | Technology headlines, deals, and earnings | Technology desk of the morning brief |
+| science-developments-analyst | Scientific developments with evidence levels | Science desk of the morning brief |
+| medical-developments-analyst | Medical approvals, trials, public health, and health policy | Medical desk of the morning brief |
 | loop-operator | Autonomous loop execution | Run loops safely, monitor stalls, intervene |
 | harness-optimizer | Harness config tuning | Reliability, cost, throughput |
 | rust-reviewer | Rust code review | Rust projects |
@@ -61,6 +70,7 @@ Use agents proactively without user prompt:
 - Brownfield project onboarding → **ecc:spec-miner**
 - Autonomous loops / loop monitoring → **ecc:loop-operator**
 - Request spanning several specialties → **ecc:chief-of-staff-orchestrator** (run as main-thread agent)
+- Morning market brief, deal or earnings roundup → **ecc:market-intelligence-agent** (run as main-thread agent)
 - Harness config reliability and cost → **ecc:harness-optimizer**
 - RAG/retrieval pipeline changes → **ecc:rag-pipeline-reviewer**
 
@@ -155,7 +165,7 @@ Troubleshoot failures: check test isolation → verify mocks → fix implementat
 ## Project Structure
 
 ```
-agents/          — 69 specialized subagents
+agents/          — 78 specialized subagents
 skills/          — 292 workflow skills and domain knowledge
 commands/        — 94 slash commands
 hooks/           — Trigger-based automations

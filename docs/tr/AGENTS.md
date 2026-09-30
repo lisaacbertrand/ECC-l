@@ -1,6 +1,6 @@
 # Everything Claude Code (ECC) — Agent Talimatları
 
-Bu, yazılım geliştirme için 69 özel agent, 292 skill, 94 command ve otomatik hook iş akışları sağlayan **üretime hazır bir AI kodlama eklentisidir**.
+Bu, yazılım geliştirme için 78 özel agent, 292 skill, 94 command ve otomatik hook iş akışları sağlayan **üretime hazır bir AI kodlama eklentisidir**.
 
 **Sürüm:** 2.2.2
 
@@ -38,6 +38,15 @@ Bu, yazılım geliştirme için 69 özel agent, 292 skill, 94 command ve otomati
 | java-build-resolver | Java/Maven/Gradle build hataları | Java build başarısızlıkları |
 | chief-of-staff | İletişim önceliklendirme ve taslaklar | Çok kanallı email, Slack, LINE, Messenger |
 | chief-of-staff-orchestrator | Uzman subagent'lara görev dağıtımı | Birden fazla uzmanlık alanı içeren istekler |
+| market-intelligence-agent | Sabah piyasa bülteni koordinatörü | Günlük piyasa bülteni (ana iş parçacığı agent'ı olarak) |
+| banking-ma-analyst | Bankacılık sektörü M&A, finansal sıkıntı ve kazançlar | Sabah bülteninin bankacılık masası |
+| insurance-ma-analyst | Sigorta sektörü M&A, finansal sıkıntı ve kazançlar | Sabah bülteninin sigorta masası |
+| defense-ma-analyst | Savunma sektörü M&A, bütçeler ve kazançlar | Sabah bülteninin savunma masası |
+| consumer-discretionary-ma-analyst | İsteğe bağlı tüketim M&A, perakende sıkıntısı ve kazançlar | Sabah bülteninin tüketim masası |
+| energy-ma-analyst | Enerji sektörü M&A, finansal sıkıntı ve kazançlar | Sabah bülteninin enerji masası |
+| technology-sector-analyst | Teknoloji manşetleri, anlaşmalar ve kazançlar | Sabah bülteninin teknoloji masası |
+| science-developments-analyst | Kanıt düzeyiyle bilimsel gelişmeler | Sabah bülteninin bilim masası |
+| medical-developments-analyst | Tıbbi onaylar, klinik denemeler, halk sağlığı ve sağlık politikası | Sabah bülteninin tıp masası |
 | loop-operator | Otonom döngü yürütme | Döngüleri güvenli çalıştırma, takılmaları izleme, müdahale |
 | harness-optimizer | Harness yapılandırma ayarlama | Güvenilirlik, maliyet, verimlilik |
 | rust-reviewer | Rust kod incelemesi | Rust projeleri |
@@ -142,7 +151,7 @@ Başarısızlık sorunlarını giderin: test izolasyonunu kontrol edin → mockl
 ## Proje Yapısı
 
 ```
-agents/          — 69 özel subagent
+agents/          — 78 özel subagent
 skills/          — 292 iş akışı skillleri ve alan bilgisi
 commands/        — 94 slash command
 hooks/           — Tetikleyici tabanlı otomasyonlar

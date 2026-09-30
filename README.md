@@ -138,11 +138,11 @@ Instead of rebuilding that process in every prompt, you install it once and make
 
 ECC is MIT-licensed open source. It works best with Claude Code today, has a supported Codex sync path, and provides capability-limited adapters for Cursor, OpenCode, Gemini, Zed, GitHub Copilot, Antigravity, Qwen, and other harnesses. See the [support status matrix](#platform-support) before assuming feature parity.
 
-Access to 69 agents, 292 skills, and 94 legacy command shims, plus hooks, rules, memory, continuous learning, and AgentShield security scanning. The agents are specialized for planning, review, build repair, security, architecture, and domain work.
+Access to 78 agents, 292 skills, and 94 legacy command shims, plus hooks, rules, memory, continuous learning, and AgentShield security scanning. The agents are specialized for planning, review, build repair, security, architecture, and domain work.
 
 | Included         |       Count | What it gives you                                                                    |
 | ---------------- | ----------: | ------------------------------------------------------------------------------------ |
-| Agents           |   69 agents | Planning, review, build repair, security, architecture, and domain work              |
+| Agents           |   78 agents | Planning, review, build repair, security, architecture, and domain work              |
 | Skills           |  292 skills | TDD, research, security, docs, frontend, data, ML, operations, and more              |
 | Commands         | 94 commands | Convenient entry points while ECC moves to a skills-first surface                    |
 | Hooks and memory |     Runtime | Enforcement, session summaries, continuous learning, instincts, and context controls |
@@ -820,7 +820,7 @@ Stable graduation of the 2.0 line: control-pane substrate, worktree lifecycle se
 
 ```text
 ECC/
-|-- agents/           # 69 specialized subagents for delegation
+|-- agents/           # 78 specialized subagents for delegation
 |-- skills/           # 292 reusable workflows loaded on demand
 |-- commands/         # 94 maintained slash-command shims
 |-- rules/            # opt-in common and language standards
@@ -857,6 +857,15 @@ ECC/
 |   |-- docs-lookup.md       # Documentation/API lookup
 |   |-- chief-of-staff.md    # Communication triage and drafts
 |   |-- chief-of-staff-orchestrator.md # Delegates work to specialist subagents
+|   |-- market-intelligence-agent.md # Morning market brief coordinator
+|   |-- banking-ma-analyst.md # Banking sector M&A desk
+|   |-- insurance-ma-analyst.md # Insurance sector M&A desk
+|   |-- defense-ma-analyst.md # Defense sector M&A desk
+|   |-- consumer-discretionary-ma-analyst.md # Consumer discretionary M&A desk
+|   |-- energy-ma-analyst.md # Energy sector M&A desk
+|   |-- technology-sector-analyst.md # Technology desk
+|   |-- science-developments-analyst.md # Science desk
+|   |-- medical-developments-analyst.md # Medical desk
 |   |-- loop-operator.md     # Autonomous loop execution
 |   |-- harness-optimizer.md # Harness config tuning
 |   |-- cpp-reviewer.md      # C++ code review
